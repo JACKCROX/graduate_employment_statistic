@@ -1,0 +1,62 @@
+<!--/*// Name : Lin Htet
+// Class: DIT/FT/1B/08
+// Admin No: 2340304*/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Information</title>
+  <link rel="stylesheet" href="css/requirementTwo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="icon">
+    <i class="fa-solid fa-arrow-down" style="font-size: 20px;"></i>
+  </div>
+  <div id="circle"></div>
+  <div id="circle2"></div>
+  <div id="circle3"></div>
+  <div id="circle4"></div>
+  <h1>University Information</h1>
+
+  <div id="chooseOption">
+    <a href="./requirementOne.html" id="reqOne">Basic Month Salary - Median (S$)</a>
+    <a href="./requirementTwo.html" id="reqTwo">Full-Time Permanent Employment Rate (%)</a>
+  </div>
+
+  <h2>"Full-Time Permanent Employment Rate (%)"</h2>
+  <div class="userOption">
+    <div>
+      <select id="universityOption">
+        <option value="" disabled selected>Select a university</option>
+        <option value="NTU">Nanyang Technological University</option>
+        <option value="NUS">National University of Singapore</option>
+        <option value="SMU">Singapore Management University</option>
+        <option value="SIT">Singapore Institute of Technology</option>
+        <option value="SUTD">Singapore University of Technology and Design</option>
+        <option value="SUSS">Singapore University of Social Sciences</option>
+      </select>
+    </div>
+    <div id="yearInputField">
+      <p>Year</p>
+      <input type="text" id="yearInput" placeholder="Please type in the year..."></input>
+      <button id="submitButton">Submit</button>
+    </div>
+  </div>
+
+  <div id="output">
+    <my-degree-list></my-degree-list>
+  </div>
+
+  <script type="module" src="./js/requirementTwo.js" defer></script>
+
+</body>
+
+</html>
